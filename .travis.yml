@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t anthonyperniah/DockerReactWithTravisCI -f Dockerfile.dev
+  - docker build -t anthonyperniah/docker_react_with_travis_ci -f Dockerfile.dev
 
 script:
-  - docker run -e CI=true anthonyperniah/DockerReactWithTravisCI npm run test
+  - docker run -e CI=true anthonyperniah/docker_react_with_travis_ci npm run test
